@@ -20,5 +20,9 @@ public class Vehicle {
     @JoinColumn(name = "type_id")
     private VehicleType type;
 
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
     // Getters and setters
 }
