@@ -1,8 +1,11 @@
 package com.app.chuushajou.models;
 
 import jakarta.persistence.*;
+import lombok.*;
 
-
+@Entity
+@Getter
+@Setter
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,4 +17,10 @@ public class Ticket {
 
     @Column(name = "total")
     private Integer total;
+
+    @Column (name = "vehicle_type")
+    private VehicleType vehicleType;
+
+
 }
+

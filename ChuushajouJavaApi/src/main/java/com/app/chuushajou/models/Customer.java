@@ -1,7 +1,10 @@
 package com.app.chuushajou.models;
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "customers")
 public class Customer {
     @Id
@@ -16,7 +19,5 @@ public class Customer {
 
     @Column(name = "address")
     private String address;
-
-
 
 }
