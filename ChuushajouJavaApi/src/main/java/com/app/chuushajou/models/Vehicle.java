@@ -1,9 +1,12 @@
 package com.app.chuushajou.models;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 
 @Entity
+@Getter
+@Setter
 @Table(name = "vehicles")
 public class Vehicle {
     @Id
@@ -24,5 +27,5 @@ public class Vehicle {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    // Getters and setters
+
 }
