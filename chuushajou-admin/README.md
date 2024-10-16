@@ -1,3 +1,11 @@
+# Must read before run
+
+If you first time clone this repo, following below command
+
+**`cd chuushajou-admin/`**
+
+**`npm install`**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
